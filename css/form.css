@@ -1,0 +1,36 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 20vw;
+    border-radius: 5px;
+    margin-left: 8px;
+    color: #5819ac;
+    text-align: center;
+}
+select{
+    width: 7vw;
+    border-radius: 5px;
+    margin-left: 8px;
+    color: rgb(88, 25, 172);
+    text-align: center;
+}
+label{
+    margin-bottom: 00.2em;
+    color: rgb(101, 19, 207);
+    margin-left: 8px;
+}
+.btn form{
+    width: 10px;
+}
+#inputCEP, #inputNum, #inputBairro, #inputCidade, #inputSenha, #inputConfirma {
+    width: 7vw;
+    text-align: center;
+}
