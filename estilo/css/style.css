@@ -3,12 +3,14 @@
 
 html{
     background-color: black;
+    padding:0%
 
 }
 
 /*menu*/
 
 nav {
+  top:auto;
   mask-image: linear-gradient(90deg, rgba(99, 96, 96, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
       
   }
