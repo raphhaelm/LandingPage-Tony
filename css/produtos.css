@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 20px;
     width: 240px;
     height: 360px;
@@ -17,6 +18,7 @@
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
     backdrop-filter: blur(8px);
+    box-shadow: -3px 3px;
 }
 .card h1{
     color: #fff;
@@ -25,4 +27,9 @@
 .card p{
     color: #ddd;
 
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10vh;
 }
