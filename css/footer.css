@@ -20,7 +20,7 @@ section {
   text-align: left;
   font: bold 16px sans-serif;
   
-  position: absolute;
+position: static;
 bottom: 0;
 left: 0;
 }
@@ -33,6 +33,10 @@ left: 0;
 }
 
 /* Footer left */
+.footer-company-name{
+    bottom: 1%;
+    position: static;
+}
 
 .footer-distributed .footer-left{
   width: 40%;
@@ -198,7 +202,3 @@ left: 0;
 }
 
 
-.footer-company-name{
-    bottom: 1%;
-    position: absolute;
-}
