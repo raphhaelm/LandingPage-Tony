@@ -5,71 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conheça o TONY primeiro</title>
+    <title>Conheça o TONY</title>
     <link rel="stylesheet" href="../css/form.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+</div>
 
 <body>
-    <form action="">
-        <label for="input_name">Nome:</label>
-        <input type="text" name="input_name" id="">
-        <label for="input_sobrenome">Sobrenome:</label>
-        <input type="text" name="input_sobrenome" id="">
-        <label for="input_email">Email:</label>
-        <input type="text" name="input_email" id="inputEmail">
-        <label for="input_senha">Senha:</label>
-        <input type="text" name="input_senha" id="inputSenha">        
-        <label for="input_confirmaSenha">Confirma senha:</label>
-        <input type="text" name="input_confirmaSenha" id="inputConfirma">
-        <label for="input_cep">CEP:</label>
-        <input type="text" name="input_cep" id="inputCEP">
-        <label for="input_endereco">Endereço:</label>
-        <input type="text" name="input_num" id="inputEndereco">
-        <label for="input_num">Número:</label>
-        <input type="text" name="input_numero" id="inputNum">
-        <label for="input_bairro">Bairro:</label>
-        <input type="text" name="input_bairro" id="inputBairro">
-        <label for="input_cidade">Cidade:</label>
-        <input type="text" name="input_cidade" id="inputCidade">
-        <label for="text">Estado:</label>
-        <select id="inputUf" class="">
-            <option selected>Selecione</option>
-            <option>AM</option>
-            <option>BA</option>
-            <option>CE</option>
-            <option>DF</option>
-            <option>ES</option>
-            <option>GO</option>
-            <option>MT</option>
-            <option>MS</option>
-            <option>MG</option>
-            <option>PA</option>
-            <option>PB</option>
-            <option>PR</option>
-            <option>PE</option>
-            <option>PI</option>
-            <option>RJ</option>
-            <option>RN</option>
-            <option>RS</option>
-            <option>RO</option>
-            <option>RR</option>
-            <option>SC</option>
-            <option>SP</option>
-            <option>SE</option>
-            <option>TO</option>
-        </select>
-        <label for="input_pais">País:</label>
-        <input type="text" name="input_pais" id="">
-        <br>
-        <div class="btn form">
-            <input type="button" value="Cadastra-se">
+    <div class="cadastroEntrar">
+        <button class="cadastroEnt" id="cadastre">Cadastra-se</button>
+        <button class="cadastroEnt" id="logar">Entrar</button>
+    </div>
+
+    <div>
+        <div class="form">
+            <form action="">
+                <div class="input">
+                    <label for="input_name">Nome:</label>
+                    <input type="text" name="input_name" id="">
+                </div>
+                <div class="input">
+                    <label for="input_sobrenome">Sobrenome:</label>
+                    <input type="text" name="input_sobrenome" id="">
+                </div>
+                <div class="input">
+                    <label for="input_email">Email:</label>
+                    <input type="text" name="input_email" id="inputEmail">
+                </div>
+                <div class="input" id="divSenha">
+                    <div class="">
+                        <label for="input_senha">Senha:</label>
+                        <input type="text" name="input_senha" id="inputSenha">
+                    </div>
+                    <div>
+                        <label for="input_confirmaSenha">Confirmação:</label>
+
+                        <input type="text" name="input_confirmaSenha" id="inputConfirma">
+                    </div>
+                </div>
+                <div class="input" id="divCep">
+                    <label for="input_cep">CEP:</label>
+                    <input type="text" name="input_cep" id="inputCEP">
+                </div>
+                <div class="input">
+                    <label for="input_endereco">Endereço:</label>
+                    <input type="text" name="input_num" id="inputEndereco">
+                </div>
+                <div class="input" id="divEndereco">
+                    <div><label for="input_num">Nº</label>
+                        <input type="text" name="input_numero" id="inputNum">
+                    </div>
+                    <div>
+                        <label for="input_bairro">Bairro:</label>
+                        <input type="text" name="input_bairro" id="inputBairro">
+                    </div>
+                </div>
+                <div class="input" id="divCidadeEstado">
+                    <div>
+                        <label for="input_cidade">Cidade:</label>
+                        <input type="text" name="input_cidade" id="inputCidade">
+                    </div>
+                    <div>
+                        <label for="text">Uf:</label>
+                        <select id="inputUf" class="">
+                            <option selected>--</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="input_pais">País:</label>
+                        <input type="text" name="input_pais" id="inputPais">
+                        <br>
+                    </div>
+                </div>
+                <div class="btn-form">
+                    <button class="button">Cadastra-se
+                </div>
+
+
+
+            </form>
         </div>
+        <div class="login">
+            <div class="divLogin">
+                <input type="text" name="login" class="inputLogin" value="Login">
+            </div>
+            <div class="divLogin">
+                <input type="text" name="senha" class="inputLogin" value="Senha">
+            </div>
+            <div class="btn-form">
+                <button class="button">Entrar</button>
+            </div>
 
-
-
-    </form>
+        </div>
+    </div>
     <script src="../js/form.js"></script>
 </body>
 

@@ -2,14 +2,125 @@
 margin: 0;
 padding: 0;
 }
-
-form {
+body{
     display: flex;
+    margin-left: 35%;
     flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+.cadastroEntrar{
+    background-color: white;
+    border: #5819ac 2px solid;
+    width: 80vh;
+    height: 12vh;    
+    padding: 5px;
+    display: flex;
+    color: wheat;
+    justify-content: space-around;
+    
+}
+.cadastroEnt{
+    background-color: white;
+    border: #5819ac 2px solid;
+    width: 40vh;
+    text-align: center;
+    padding: 30px;
+
 }
 
+
+.form{
+    background-color: white;
+    border: #5819ac 2px solid;
+    width: 80vh;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    height: auto;
+          
+}
+.login{    
+    background-color: white;
+    border: #5819ac 2px solid;
+    width: 80vh;
+    display: none;
+    padding: 5px ;    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+          
+}
+.divLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1vh;
+}
+.input{
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0.5em;
+
+}
+#divSenha{
+    display: flex;
+    flex-direction: row;
+    width: 70vh;
+    justify-content: space-between;
+    
+}
+#divCep{
+    display: flex;
+    flex-direction: row;
+    width: 25vh;
+    justify-content: space-between;
+
+}
+#divEndereco{
+    display: flex;
+    flex-direction: row;
+    width: 70vh;
+    justify-content: space-between;
+}
+#divCidadeEstado{
+    display: flex;
+    flex-direction: row;
+    width: 70vh;
+    justify-content: space-between;
+}
+.btn-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2em;
+}
+.button{
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 20vh;
+    height: 6vh;
+}
+form{
+    
+}
 input {
-    width: 20vw;
+    width: 69vh;
+    border-radius: 5px;
+    margin-left: 8px;
+    color: #5819ac;
+    text-align: center;
+
+}
+.inputLogin{
+    width: 39vh;
+    height: 9vh;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 5px;
     margin-left: 8px;
     color: #5819ac;
@@ -27,10 +138,11 @@ label{
     color: rgb(101, 19, 207);
     margin-left: 8px;
 }
-.btn form{
-    width: 10px;
-}
-#inputCEP, #inputNum, #inputBairro, #inputCidade, #inputSenha, #inputConfirma {
+
+#inputCEP,  #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais {
     width: 7vw;
-    text-align: center;
+}
+#inputNum, #inputUf{
+width: 7vh;
+
 }
