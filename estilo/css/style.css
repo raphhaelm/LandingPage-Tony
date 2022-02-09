@@ -2,7 +2,10 @@
 
 
 html{
-    background-color: black;
+  background-image: url("https://cdn.dribbble.com/users/760915/screenshots/2321861/media/daecb43fa714b20ebb5bcc7a8b82473d.gif");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: black;
     padding:0%
 
 }

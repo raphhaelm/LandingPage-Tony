@@ -21,9 +21,9 @@ particlesJS("particles-container", {
       line_linked: {
         enable: true,
         distance: 150,
-        color: "#0000ff",
+        color: "#FFFFF0",
         opacity: 0.4,
-        width: 1
+        width: 4
       },
       move: {
         enable: true,
