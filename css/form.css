@@ -4,14 +4,16 @@ padding: 0;
 }
 body{
     display: flex;
-    margin-left: 35%;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
+}
+.geral{
+    margin-left: 35%;
+    margin-top: 3%;
 }
 .cadastroEntrar{
     background-color: white;
-    border: #5819ac 2px solid;
+    border: #0000ff 2px solid;
     width: 80vh;
     height: 12vh;    
     padding: 5px;
@@ -19,30 +21,38 @@ body{
     color: wheat;
     justify-content: space-around;
     
+    border-radius: 25px;
+    
 }
 .cadastroEnt{
     background-color: white;
-    border: #5819ac 2px solid;
+    border: #0000ff 2px solid;
     width: 40vh;
     text-align: center;
     padding: 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0000ff;
 
 }
 
 
 .form{
-    background-color: white;
-    border: #5819ac 2px solid;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: #0000ff 2px solid;
     width: 80vh;
     display: flex;
     padding: 5px;
     flex-direction: row;
-    height: auto;
+    height: auto;    
+    border-radius: 25px;
           
 }
 .login{    
-    background-color: white;
-    border: #5819ac 2px solid;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 25px;
+    border: #0000ff 2px solid;
     width: 80vh;
     display: none;
     padding: 5px ;    
@@ -53,6 +63,7 @@ body{
           
 }
 .divLogin{
+    border-radius: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -93,12 +104,14 @@ body{
     justify-content: space-between;
 }
 .btn-form{
+    border-radius: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 2em;
 }
 .button{
+    border-radius: 25px;
     font-weight: bold;
     font-size: 18px;
     border-radius: 25px;
@@ -112,7 +125,7 @@ input {
     width: 69vh;
     border-radius: 5px;
     margin-left: 8px;
-    color: #5819ac;
+    color: #0000ff;
     text-align: center;
 
 }
@@ -123,19 +136,19 @@ input {
     font-weight: bold;
     border-radius: 5px;
     margin-left: 8px;
-    color: #5819ac;
+    color: #0000ff;
     text-align: center;
 }
 select{
     width: 7vw;
     border-radius: 5px;
     margin-left: 8px;
-    color: rgb(88, 25, 172);
+    color: #0000ff;
     text-align: center;
 }
 label{
     margin-bottom: 00.2em;
-    color: rgb(101, 19, 207);
+    color: #0000ff;
     margin-left: 8px;
 }
 
@@ -146,3 +159,56 @@ label{
 width: 7vh;
 
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+html{
+  background-image: url("https://cdn.dribbble.com/users/760915/screenshots/2321861/media/daecb43fa714b20ebb5bcc7a8b82473d.gif");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: black;
+    padding:0%
+
+}
+
+h1{
+  color:white;
+}
+
+/*menu*/
+
+nav {
+  top:auto;
+  mask-image: linear-gradient(90deg, rgba(99, 96, 96, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+      
+  }
+  
+  nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(223, 226, 233, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: #0000ff;
+  }
+  
+  /*particulas*/
+
+  
