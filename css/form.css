@@ -26,7 +26,7 @@ body{
 }
 .cadastroEnt{
     background-color: white;
-    border: #0000ff 2px solid;
+    border: none;
     width: 40vh;
     text-align: center;
     padding: 30px;
@@ -34,7 +34,9 @@ body{
     font-weight: bold;
     font-size: 20px;
     color: #0000ff;
-
+}
+#cadastre{
+    border: #0000ff 2px solid;
 }
 
 
