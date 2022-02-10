@@ -17,7 +17,7 @@ body {
 html{
     background-image: url("https://nossoamigo.org/wp-content/uploads/2019/08/6955d2_fecbca0b23214bc48f1dc5acae4b3491_mv2.gif");
     background-color: black;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     }
 .container{
