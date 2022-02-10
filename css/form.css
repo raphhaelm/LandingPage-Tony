@@ -8,62 +8,59 @@ body{
     justify-content: center;
 }
 .geral{
-    margin-left: 35%;
-    margin-top: 3%;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
 }
 .cadastroEntrar{
-    background-color: white;
-    border: #0000ff 2px solid;
-    width: 80vh;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
+    width: 40vw;
     height: 12vh;    
     padding: 5px;
     display: flex;
-    color: wheat;
     justify-content: space-around;
-    
-    border-radius: 25px;
+    border-radius: 20px;
+    box-shadow: -10px 15px 50px #000;
+    backdrop-filter: blur(8px);
     
 }
 .cadastroEnt{
-    background-color: white;
+    background-color: rgba(255,255,255,0.1);
     border: none;
-    width: 40vh;
+    width: 40vw;
     text-align: center;
-    padding: 30px;
-    border-radius: 25px;
+    padding: 20px;
+    border-radius: 20px;
     font-weight: bold;
     font-size: 20px;
-    color: #0000ff;
+    color: white
 }
 #cadastre{
     border: #0000ff 2px solid;
 }
 
-
-.form{
-    background-color: rgb(255, 255, 255, 0.7);
-    border: #0000ff 2px solid;
-    width: 80vh;
+.form, .login{
+    background-color: rgba(255,255,255,0.1);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
+    width: 40vw;
     display: flex;
-    padding: 5px;
-    flex-direction: row;
-    height: auto;    
-    border-radius: 25px;
-          
-}
-.login{    
-    background-color: rgb(255, 255, 255, 0.7);
-    border-radius: 25px;
-    border: #0000ff 2px solid;
-    width: 80vh;
-    display: none;
-    padding: 5px ;    
+    padding: 20px;
     flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
-    justify-content: center;
+    height: auto;    
+    border-radius: 20px;
+    box-shadow: -10px 15px 50px #000;
+    backdrop-filter: blur(8px);
           
 }
+
 .divLogin{
     border-radius: 25px;
     display: flex;
@@ -119,6 +116,8 @@ body{
     border-radius: 25px;
     width: 20vh;
     height: 6vh;
+    background-color: transparent;
+    color: white;
 }
 form{
     
@@ -127,19 +126,26 @@ input {
     width: 69vh;
     border-radius: 5px;
     margin-left: 8px;
-    color: #0000ff;
-    text-align: center;
+    color: black;
+    font-weight: 200;
+    text-align: center;    
+    background-color: aquamarine;
 
 }
 .inputLogin{
-    width: 39vh;
+    width: 29vw;
     height: 9vh;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-left: 8px;
     color: #0000ff;
     text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
 }
 select{
     width: 7vw;
@@ -150,15 +156,18 @@ select{
 }
 label{
     margin-bottom: 00.2em;
-    color: #0000ff;
+    color: white;
+    font-weight: bolder;
     margin-left: 8px;
 }
 
 #inputCEP,  #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais {
     width: 7vw;
+    background-color: aquamarine;
 }
 #inputNum, #inputUf{
-width: 7vh;
+width: 7vw;
+background-color: aquamarine;
 
 }
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -214,3 +223,49 @@ nav {
   /*particulas*/
 
   
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.funcionamento_servico p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10vh;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 240px;
+    height: 360px;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 1;
+    border-radius: 20px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 15px 50px #000;
+}
+.card h1{
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+.card p{
+    color: #ddd;
+
+}
