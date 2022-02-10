@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+body {
+    
+    /* Responsive behaviour */
+    flex-wrap: row;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.container{
+    left:0;
+    right:0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    border-radius: 6%;
+    position: relative;
+    width: 250px;
+    background-image: linear-gradient(to right top, #000000, #120c0f, #1c151a, #241b25, #2b2332, #312644, #342958, #302e6d, #2a2c8c, #2027ac, #111dcb, #0000e9);    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 1px;
+    margin:  56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: rgb(255, 248, 248);
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button i {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+/* Social media colors */
+button.github {
+    background-color: #24292e;
+} 
+
+button.instagram {
+    background-color: #d3263a;
+}
+
+button.linkedin {
+    background-color: #1da1f2;
+}
+button.google {
+    background-color: #7d41ee;
+}
