@@ -17,7 +17,7 @@ body {
 html{
     background-image: url("https://nossoamigo.org/wp-content/uploads/2019/08/6955d2_fecbca0b23214bc48f1dc5acae4b3491_mv2.gif");
     background-color: black;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     }
 .container{
@@ -30,14 +30,20 @@ html{
 .card {
     border-radius: 6%;
     position: relative;
-    width: 250px;
-    background-image: linear-gradient(to right top, #000000, #120c0f, #1c151a, #241b25, #2b2332, #312644, #342958, #302e6d, #2a2c8c, #2027ac, #111dcb, #0000e9);    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
     padding: 1px;
     margin:  56px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 240px;
+    height: 360px;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 15px 50px #000;
 }
 
 .card-image {
@@ -63,6 +69,7 @@ p {
     letter-spacing: 0.5px;
     margin-bottom: 12px;
     text-align: center;
+    color:aqua;
 }
 
 .name {
