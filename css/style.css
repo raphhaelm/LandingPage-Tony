@@ -1,5 +1,20 @@
 html{
+    background-color: rgba(98, 97, 98, 0.335);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+body{
+    display: flex;    
+    justify-content: center;
+}
+div{
+    width: 50vw;
+    height: auto;
+    font-weight: 100;
+    background-color: wheat;
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+    padding: 20px;
 }
