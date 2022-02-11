@@ -82,7 +82,10 @@ body{
     width: 70vh;
     justify-content: space-between;
     
+    border: blue solid 1px;
+    
 }
+#divSenha 
 #divCep{
     display: flex;
     flex-direction: row;
@@ -94,7 +97,8 @@ body{
     display: flex;
     flex-direction: row;
     width: 70vh;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border: blue solid 1px;
 }
 #divCidadeEstado{
     display: flex;
@@ -161,7 +165,7 @@ label{
     margin-left: 8px;
 }
 
-#inputCEP,  #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais {
+#inputCEP,  #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais, #input_RG, #inputComp {
     width: 7vw;
     background-color: aquamarine;
 }
