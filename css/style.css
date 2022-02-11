@@ -2,12 +2,11 @@
 
 
 html{
-  background-image: url("https://cdn.dribbble.com/users/760915/screenshots/2321861/media/daecb43fa714b20ebb5bcc7a8b82473d.gif");
+  background-image: url("https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/09/plexus1.gif?fit=750%2C365&quality=80&strip=all&ssl=1");
   background-repeat: no-repeat;
   background-size: cover; 
   background-color: black;
-    padding:0%
-
+  
 }
 
 h1{
@@ -19,9 +18,10 @@ h1{
 /*menu*/
 
 nav {
+  position: sticky;
   top:auto;
   mask-image: linear-gradient(90deg, rgba(99, 96, 96, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-      
+   flex-wrap: wrap;   
   }
   
   nav ul {
@@ -47,9 +47,9 @@ nav {
   nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.1);
-    color: #0000ff;
+    color:aqua;
   }
   
-  /*particulas*/
+  
 
   
