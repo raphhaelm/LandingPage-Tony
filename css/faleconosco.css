@@ -122,3 +122,10 @@ button.linkedin {
 button.google {
     background-color: #7d41ee;
 }
+
+
+
+.link{
+    color:aqua;
+    text-decoration: none;
+}
