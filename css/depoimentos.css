@@ -3,18 +3,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .depoimento1{
-  
-   height: 16vh;
-   width: 122vh;
-   background: white;
-   border-radius: 4vh 0 0 0 ;
-   opacity: 70%;
-   text-align: center;
-   font-size: 3vh;
-   margin: auto;
+    
+    height: 16vh;
+    width: 122vh;
+    margin-top: 10vh;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 4vh 0 0 0 ;
+    opacity: 70%;
+    text-align: center;
+    font-size: 3vh;
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 15px 50px #000;
+    position: relative;
    
    
 }
@@ -23,30 +30,52 @@
   
     height: 16vh;
     width: 122vh;
-    background: white;
-    border-radius: 0 4vh 0 0 ;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 0 4vh 0  0  ;
     opacity: 70%;
     text-align: center;
     font-size: 3vh;
-    
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 15px 50px #000;
+    position: relative;
  }
 
  .depoimento3{
   
     height: 16vh;
     width: 122vh;
-    background: white;
+    background-color: rgba(255,255,255,0.1);
     border-radius: 4vh 0 0 0 ;
     opacity: 70%;
     text-align: center;
     font-size: 3vh;
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 15px 50px #000;
+    position: relative;
     
  }
-
- .img1 {
-     background-image: url('https://pbs.twimg.com/profile_images/1458567677916717063/ryADKDOK_400x400.jpg');
-     width: 20%;
+ 
+ p{
+     color: #fff;
  }
+.img1 img {
+    clip-path: circle(50% at 49% 50%);
+    width: 150px;
+    height: 150px;
+    margin-left: 270%;
+    position: relative;
+    border: red solid 10px;
+
+}
+   
+
+ 
 
 
 
