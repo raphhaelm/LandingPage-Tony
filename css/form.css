@@ -28,22 +28,24 @@ body{
     box-shadow: -10px 15px 50px #000;
     backdrop-filter: blur(8px);
     
+    box-sizing: border-box;
+    
 }
 .cadastroEnt{
     background-color: rgba(255,255,255,0.1);
     border: none;
-    width: 40vw;
+    width: 50%;
     text-align: center;
     padding: 20px;
     border-radius: 20px;
     font-weight: bold;
     font-size: 20px;
-    color: white
+    color: white;
+   box-sizing: border-box;
 }
 #cadastre{
     border: #0000ff 2px solid;
 }
-
 .form, .login{
     background-color: rgba(255,255,255,0.1);
     z-index: 1;
@@ -72,58 +74,48 @@ body{
     margin: 1vh;
 }
 .input{
-    width: 70vh;
+    width: 86%;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     margin: 0.5em;
 
 }
-#divSenha{
+#divSenha, #divEndereco, #divCidadeEstado{
     display: flex;
     flex-direction: row;
-    width: 70vh;
+    width: 100%;
     justify-content: space-between;
 }
-#divSenha div, #divEndereco div{
-    width: 33%;
-}
-.inputNum{
+#divSenha div, #divEndereco div, #divCidadeEstado div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    
 }
 #divCep{
     display: flex;
     flex-direction: row;
-    width: 25vh;
+    width: 88%;
     justify-content: space-between;
 
 }
-#divEndereco{
-    display: flex;
-    flex-direction: row;
-    width: 70vh;
-    justify-content: center;
-}
-#divCidadeEstado{
-    display: flex;
-    flex-direction: row;
-    width: 70vh;
-    justify-content: space-between;
-}
+
 .btn-form{
     border-radius: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 2em;
+     
 }
 .button{
     border-radius: 25px;
     font-weight: bold;
     font-size: 18px;
     border-radius: 25px;
-    width: 20vh;
+    width: 30%;
     height: 6vh;
     background-color: transparent;
     color: white;
@@ -132,7 +124,7 @@ form{
     
 }
 input {
-    width: 69vh;
+    width: 100%;
     border-radius: 5px;
     margin-left: 8px;
     color: black;
@@ -142,7 +134,7 @@ input {
 
 }
 .inputLogin{
-    width: 29vw;
+    width: 80%;
     height: 9vh;
     font-size: 20px;
     font-weight: bold;
@@ -157,7 +149,7 @@ input {
     backdrop-filter: blur(8px);
 }
 select{
-    width: 7vw;
+    width: 30%;
     border-radius: 5px;
     margin-left: 8px;
     color: #0000ff;
@@ -170,15 +162,12 @@ label{
     margin-left: 8px;
 }
 
-#inputCEP,  #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais, #input_RG, #inputComp {
-    width: 7vw;
+
+#inputCEP,  #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais, #input_RG, #inputComp, #inputNum, #inputUf {
+    width: 60%;
     background-color: aquamarine;
 }
-#inputNum, #inputUf{
-width: 7vw;
-background-color: aquamarine;
 
-}
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
@@ -277,4 +266,26 @@ nav {
 .card p{
     color: #ddd;
 
+}
+@media (max-width: 500px) {
+    .cadastroEntrar{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .cadastroEnt{
+        width: 100%;
+        height: 50%;
+        font-size: 16px;
+    }
+    .form, .login{
+        width: 80vw;
+    }
+    .btn-form{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .button{
+        width: 80%;
+    }
 }
