@@ -13,9 +13,10 @@ body {
     margin: auto;
     color: #fff;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
-    background-color: #000;
+    text-shadow: #000 1px 2px 1px;
+    margin-top: 30px;
 
 }
 .container{
@@ -88,3 +89,8 @@ margin-left: 34%;
 color: #ddd;
 text-shadow: #000 3px 5px 5px;
 }
+@media screen and (max-width: 600px) {
+    .container {
+       flex-direction: column;
+    }
+  }
