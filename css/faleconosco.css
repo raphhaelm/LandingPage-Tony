@@ -128,3 +128,9 @@ button.google {
     color:aqua;
     text-decoration: none;
 }
+#profileRapha{
+    background-image: url('../img/RAPHA.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start center;
+}
