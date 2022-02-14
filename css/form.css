@@ -60,6 +60,9 @@ body{
     backdrop-filter: blur(8px);
           
 }
+.login{
+    display: none;
+}
 
 .divLogin{
     border-radius: 25px;
@@ -81,11 +84,14 @@ body{
     flex-direction: row;
     width: 70vh;
     justify-content: space-between;
-    
-    border: blue solid 1px;
-    
 }
-#divSenha 
+#divSenha div, #divEndereco div{
+    width: 33%;
+}
+.inputNum{
+    display: flex;
+    flex-direction: column;
+}
 #divCep{
     display: flex;
     flex-direction: row;
@@ -97,8 +103,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 70vh;
-    justify-content: space-evenly;
-    border: blue solid 1px;
+    justify-content: center;
 }
 #divCidadeEstado{
     display: flex;
