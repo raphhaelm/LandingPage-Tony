@@ -1,39 +1,29 @@
-* {
-margin: 0;
-padding: 0;
-}
-body{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-}
-.geral{
-    width: 100vw;
-    height: 85vh;
+.geral {
+    width: 100%;
+    height: 83vh;
     display: flex;
     justify-content: center;
 }
-.cadastroEntrar{
-    background-color: rgba(255,255,255,0.1);
+
+.cadastroEntrar {
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: 1;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
     backdrop-filter: blur(8px);
     width: 40vw;
-    height: 12vh;    
+    height: 12vh;
     padding: 5px;
     display: flex;
     justify-content: space-around;
     border-radius: 20px;
     box-shadow: -10px 15px 50px #000;
     backdrop-filter: blur(8px);
-    
     box-sizing: border-box;
-    
 }
-.cadastroEnt{
-    background-color: rgba(255,255,255,0.1);
+
+.cadastroEnt {
+    background-color: rgba(255, 255, 255, 0.1);
     border: none;
     width: 50%;
     text-align: center;
@@ -42,39 +32,43 @@ body{
     font-weight: bold;
     font-size: 20px;
     color: white;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
-#cadastre{
+
+#cadastre {
     border: #0000ff 2px solid;
 }
-.form, .login{
-    background-color: rgba(255,255,255,0.1);
+
+.form, .login {
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: 1;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
     backdrop-filter: blur(8px);
     width: 40vw;
+    max-height: 70vh;
     display: flex;
     padding: 20px;
     flex-direction: column;
-    height: auto;    
     border-radius: 20px;
     box-shadow: -10px 15px 50px #000;
     backdrop-filter: blur(8px);
-          
+
 }
-.login{
+
+.login {
     display: none;
 }
 
-.divLogin{
+.divLogin {
     border-radius: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 1vh;
 }
-.input{
+
+.input {
     width: 86%;
     display: flex;
     flex-direction: column;
@@ -82,76 +76,93 @@ body{
     margin: 0.5em;
 
 }
-#divSenha, #divEndereco, #divCidadeEstado{
+
+#divSenha, #divEndereco, #divCidadeEstado {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
 }
-#divSenha div, #divEndereco div, #divCidadeEstado div{
+
+#divSenha div, #divEndereco div, #divCidadeEstado div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 33%;
-    
+
 }
-#divCep{
+
+#divCep {
     display: flex;
     flex-direction: row;
     width: 88%;
     justify-content: space-between;
 }
 
-.btn-form{
+.btn-form {
     border-radius: 25px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 2em;
+    width: 100%;
+    margin-left: 35%;
+    height: 50%;
+    bottom: 90%;
+    padding: 10px;
 }
-.button{
+
+.btn-form p {
+    padding: 10px;
+    color: #0000ff;
+}
+
+.button {
     border-radius: 25px;
     font-weight: bold;
-    font-size: 18px;
-    border-radius: 25px;
+    font-size: 15px;
     width: 30%;
-    height: 6vh;
+    height: 30px;
     background-color: transparent;
-    color: white;
+    color: aqua
 }
+
 input {
     width: 100%;
     border-radius: 5px;
     margin-left: 8px;
     color: black;
     font-weight: 200;
-    text-align: center;    
+    text-align: center;
     background-color: aquamarine;
 
 }
-.inputLogin{
+
+.inputLogin {
     width: 80%;
-    height: 9vh;
+    height: 50px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 20px;
     margin-left: 8px;
-    color: #0000ff;
+    color: aqua;
     text-align: center;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: 1;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
     backdrop-filter: blur(8px);
 }
-select{
+
+select {
     width: 30%;
     border-radius: 5px;
     margin-left: 8px;
     color: #0000ff;
     text-align: center;
 }
-label{
+
+label {
     margin-bottom: 00.2em;
     color: white;
     font-weight: bolder;
@@ -159,129 +170,34 @@ label{
 }
 
 
-#inputCEP,  #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais, #input_RG, #inputComp, #inputNum, #inputUf {
+#inputCEP, #inputBairro, #inputCidade, #inputSenha, #inputConfirma, #inputPais, #input_RG, #inputComp, #inputNum, #inputUf {
     width: 60%;
     background-color: aquamarine;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-
-html{
-  background-image: url("https://cdn.dribbble.com/users/760915/screenshots/2321861/media/daecb43fa714b20ebb5bcc7a8b82473d.gif");
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-color: black;
-    padding:0%
-
-}
-
-h1{
-  color:white;
-}
-
-/*menu*/
-
-nav {
-  top:auto;
-  mask-image: linear-gradient(90deg, rgba(99, 96, 96, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-      
-  }
-  
-  nav ul {
-    text-align: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-  }
-  
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    padding: 18px;
-    font-family: "Open Sans";
-    text-transform:uppercase;
-    color: rgba(223, 226, 233, 0.5);
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  nav ul li a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.1);
-    color: #0000ff;
-  }
-  
-  /*particulas*/
-
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.funcionamento_servico p{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    color: #fff;
-    padding-top: 20px;
-    text-align: center;
-    margin: auto;
-
-}
-.container{
-    display: flex;
-    justify-content: space-around;
-    margin: 10vh;
-}
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    width: 240px;
-    height: 360px;
-    background-color: rgba(255,255,255,0.1);
-    z-index: 1;
-    border-radius: 20px;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
-    backdrop-filter: blur(8px);
-    box-shadow: -10px 15px 50px #000;
-}
-.card h1{
-    color: #fff;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px #000;
-}
-.card p{
-    color: #ddd;
-
-}
 @media (max-width: 500px) {
-    .cadastroEntrar{
+    .cadastroEntrar {
         display: flex;
         flex-direction: column;
         width: 80vw;
     }
-    .cadastroEnt{
+
+    .cadastroEnt {
         width: 100%;
         height: 50%;
         font-size: 16px;
     }
-    .form, .login{
+
+    .form, .login {
         width: 80vw;
     }
-    .btn-form{
+
+    .btn-form {
         width: 100%;
         margin-left: 0%;
     }
-    .button{
+
+    .button {
         width: 80%;
     }
 }

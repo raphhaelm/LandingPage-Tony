@@ -7,38 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conheça o TONY</title>
   <link rel="stylesheet" href="../css/form.css">
-  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/produtos.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
-</div>
-
 <body>
   <header>
     <nav>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="../index.html">Home</a>
         </li>
         <li>
-          <a href="#">Produtos</a>
+          <a href="./produtos.html">Produtos</a>
         </li>
         <li>
-          <a href="#">Depoimentos</a>
+          <a href="./depoimentos.html">Depoimentos</a>
         </li>
         <li>
-          <a href="#">Fale Conosco</a>
+          <a href="./faleconosco.html">fale conosco</a>
         </li>
+        
         <li>
-          <a href="#">Login/Cadastre-se</a>
+          <a href="./formularios.html">Cadastro/Login</a>
         </li>
       </ul>
     </nav>
   </header>
-  <br>
   <div class="geral">
     <div>
       <div class="cadastroEntrar">
@@ -134,12 +131,11 @@
               </div>
               <div>
                 <label for="input_pais">País:</label>
-                <input type="text" name="input_pais" id="inputPais">
-                <br>
+                <input type="text" name="input_pais" id="inputPais">               
               </div>
             </div>
-            <div class="btn-form">
-              <button class="button">Cadastre-se</button>
+            <div class="btn-form">             
+              <button class="button" id="btn-cadastro">Cadastre-se</button>
             </div>
 
 
@@ -153,10 +149,11 @@
           <div class="divLogin">
             <input type="text" name="senha" class="inputLogin" value="Senha">
           </div>
+        
           <div class="btn-form">
-            <button class="button">Entrar</button>
+            <button class="button" id="btn-entrar">Entrar</button>
+            <p><a href="../html/recuperaSenha.html">Esqueceu a senha ?</a></p>
           </div>
-
         </div>
       </div>
     </div>
@@ -165,8 +162,7 @@
     <div class="rodape">
       <p class="textofooter">Resilia &copy 2022 Todos os Direitos reservados -T14</p>
     </div>
-  </footer>
-
+  </footer> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
@@ -176,5 +172,4 @@
   <script src="../js/form.js"></script>
   <script src="../js/login.js"></script>
 </body>
-
 </html>
