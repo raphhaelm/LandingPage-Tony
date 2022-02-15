@@ -23,7 +23,6 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 10vh;
-    border: 1px red solid;
     width: 90vw;
 }
 .card{
