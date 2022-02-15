@@ -6,11 +6,7 @@ footer{
     justify-content: center;
     left:0;   
     margin: auto auto;
-  
 }
-    
-
-
 .rodape{
 color: aqua;
 top:0;
@@ -18,10 +14,7 @@ bottom:0;
 left: 40%;
 justify-content: center;
 text-align: center;
-
 }
-
 .textofooter{
-padding:1%;
-    
+padding:1%;   
 }
