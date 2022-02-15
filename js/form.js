@@ -1,5 +1,6 @@
+try{
 $('#inputCEP').on('focusout', function () {
-    try{
+    
     $.ajax({
         url: 'https://viacep.com.br/ws/' + $(this).val() + '/json/unicode/',
         dataType: 'json',
@@ -13,11 +14,11 @@ $('#inputCEP').on('focusout', function () {
         }
     });
 }
+)
+}
 catch (e){
     console.log('Opsss...')
 }
-});
-
 $('#cadastre').mouseenter('click', function () {
     $('.login').css({ 'display': 'none' })
     $('.form').css({ 'display': 'flex' })
