@@ -5,6 +5,7 @@ footer{
     justify-content: center;
     left:0;   
     margin: auto auto;
+    width: 100%;
 }
 .rodape{
 color: aqua;
