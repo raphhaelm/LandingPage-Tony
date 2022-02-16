@@ -11,11 +11,11 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    border: solid white 0.2px;
     width: 96%;
     height: auto;
     margin: 2vw;
     padding-left: 1vw;
+    border-bottom: white  solid 0.5px;
 }
 #container h1{
     color: white;
@@ -33,13 +33,43 @@ body{
     max-height:460px;
     background-color: transparent;
 }
-.tituloBeneficios{
+#tituloBeneficios{
     color: white;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
+    text-shadow: black 6px 3px 3px;
+}
+.containerBeneficios{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
  .beneficios{
-     color: white;
+     width: 33%;
+     display: flex;
+     flex-direction: column;
  }
+.lista li{
+    text-align: justify;
+    color: white;
+    list-style-type: none;
+    font-size: 20px;
+    text-shadow: black 6px 3px 3px;
+}
+.containerEspera{
+    display: flex;
+    flex-direction: column;
+}
+.containerEspera h2{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: black 1px 3px 3px;
+
+}
+#button{
+    text-decoration: none;
+}
