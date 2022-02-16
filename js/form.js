@@ -64,3 +64,13 @@ $('#btn-recuperar').on('click', function (e) {
         alert('Preencha o campo email, com uma conta válida!')
     }
 })
+$('#btn-enviar').on('click', function(e){
+    e.preventDefault();
+    if($('inputLogin').val().includes("@", ".com")){
+
+    alert(`Operação realizada com sucesso. Digite o codigo recebido no seu email. `)
+
+    } else {
+        alert('Preencha o campo email, com uma conta válida!')
+    }
+})
