@@ -10,7 +10,7 @@
 .depoimento1 div, .depoimento2 div, .depoimento3 div{
     width: 20%;
     clip-path: circle(40% at 50% 50%);  
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: rgba(255,255,255);    
@@ -75,7 +75,7 @@ p{
     .depoimento1 div, .depoimento2 div, .depoimento3 div{
         width: 40%;
         clip-path: circle(40% at 50% 50%);  
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         background-color: rgba(255,255,255);    
