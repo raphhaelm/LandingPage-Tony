@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    border: solid white 0.2px;
+    width: 96%;
+    height: auto;
+    margin: 2vw;
+    padding-left: 1vw;
+}
+#container h1{
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+}
+#p{
+    text-align: justify;
+    font-weight: 600;
+    color: white;
+    font-size: 23px;
+}
+.roboImg{
+    max-width:800px;
+    max-height:460px;
+    background-color: transparent;
+}
+.tituloBeneficios{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+ .beneficios{
+     color: white;
+ }
