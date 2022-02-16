@@ -86,3 +86,21 @@ body{
 .button a{
     text-decoration: none;
 }
+.logo{
+    float: left;
+    width: 55px;
+    height: 55px;
+    max-width: 80px;
+    max-height: 80px;
+    background-image: url("../img/tony.png");
+    background-position: center center;
+    background-size: cover;
+    margin-top: 5px;
+    
+}
+@media (max-width: 500px) {
+    #container{
+        flex-direction: column-reverse;
+    }
+    
+}

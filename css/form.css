@@ -117,7 +117,7 @@
     color: #0000ff;
 }
 
-.button {
+.buttonForm {
     border-radius: 25px;
     font-weight: bold;
     font-size: 15px;
@@ -132,7 +132,7 @@ input {
     width: 100%;
     border-radius: 5px;
     margin-left: 8px;
-    color: black;
+    color: white;
     font-weight: 200;
     text-align: center;
     background-color: aquamarine;
@@ -194,7 +194,10 @@ select {
     background-color: transparent;
     color: aqua
 }
-
+.recuperacaoSenha{
+    color: white;
+    font-weight: bold;
+}
 @media (max-width: 500px) {
     .cadastroEntrar {
         display: flex;

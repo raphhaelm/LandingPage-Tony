@@ -8,10 +8,8 @@
 /* <img src=> */
 
 .depoimento1 div, .depoimento2 div, .depoimento3 div{
-    border: red solid 2px;
     width: 20%;
-    color: wheat;
-    clip-path: circle(25.4% at 50% 50%);  
+    clip-path: circle(40% at 50% 50%);  
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -36,8 +34,8 @@
 .depoimento1, .depoimento2, .depoimento3{
     display: flex;
     flex-direction: row-reverse;   
-    height: auto;
-    min-height: 15vh;
+    max-height: 20vh;
+    min-height: 10vh;
     width: 60vw;
     background-color: rgba(255,255,255,0.1);
     border-radius: 20px 60px 60px 0px;
@@ -50,13 +48,40 @@
     border-right: none;
     backdrop-filter: blur(8px);
     box-shadow: -10px 15px 50px #000;
-    margin: 10px;
+    margin: 12px;
 }
 .depoimento2{
     flex-direction: row;
-    border-right: none;
+    border-right: 1px white solid;
     border-left: none;
+    border-radius: 60px 20px 0px 60px;
 }
 p{
      color: #fff;
  }
+@media (max-width: 500px) {
+    .container{
+        width: 60vw;
+    }
+    .depoimento1, .depoimento2,.depoimento3{
+        max-height:max-content;
+        font-size: 18px;
+        width: 90vw;
+    }
+    .depoimento1 p, .depoimento2 p, .depoimento3 p{
+        width: 60%; 
+        padding: 18px;
+    }
+    .depoimento1 div, .depoimento2 div, .depoimento3 div{
+        width: 40%;
+        clip-path: circle(40% at 50% 50%);  
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: rgba(255,255,255);    
+        backdrop-filter: none;
+        z-index: auto;
+        opacity: 100%;
+    }
+    
+}
