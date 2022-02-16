@@ -1,23 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+html{
+  height: auto;
+  width: 100%;
+  background-image: url("https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/09/plexus1.gif?fit=750%2C365&quality=80&strip=all&ssl=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+    }
+  
+
+
+body {
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;  
+   
+}
+
+
+nav {
+  position: sticky;
+  top:auto;
+  mask-image: linear-gradient(90deg, rgba(99, 96, 96, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+   flex-wrap: wrap;   
+  }
+  
+  nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(223, 226, 233, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color:aqua;
+  }
+
+
+footer{
+background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+bottom: 0;
+justify-content: center;
+left:0;   
+width: 100%;
+}
+
+.rodape{
+color: aqua;
+top:0;
+bottom:0;
+justify-content: center;
+text-align: center;
+}
+
+.textofooter{
+padding:1%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container{
     left:0;
     right:0;
     position: static;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .card {
     border-radius: 6%;
     position:sticky;
     padding: 1px;
+    margin:  56px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 18%;
-    height: auto;
+    width: 240px;
+    height: 360px;
     background-color: rgba(255,255,255,0.1);
     z-index: 1;
     border-top: 1px solid #fff;
@@ -47,6 +216,7 @@
 p {
     line-height: 24px;
     letter-spacing: 0.5px;
+    margin-bottom: 12px;
     text-align: center;
     color:aqua;
 }
@@ -57,6 +227,7 @@ p {
     color: rgb(255, 248, 248);
     font-weight: bold;
     letter-spacing: 0.8px;
+    margin-bottom: 8px;
 }
 
 .socials {
@@ -66,6 +237,7 @@ p {
 }
 
 button {
+    margin: 12px 8px;
     width: 44px;
     height: 44px;
     border: none;
