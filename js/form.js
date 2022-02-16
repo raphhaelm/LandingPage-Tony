@@ -53,3 +53,10 @@ $('#btn-cadastro').on('click', function(e){
  $("#inputCidade").val("");
  $("#inputUf").val("");
 })
+
+$('#btn-recuperar').on('click', function(e){
+    e.preventDefault();
+    let emailRec = $('#inputEmailRec').val();
+    if($('#inputEmailRec').filter())
+   alert(`Operação realizada com sucesso. Consulte o email ${emailRec}`)
+})
