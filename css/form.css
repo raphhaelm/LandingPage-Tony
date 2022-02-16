@@ -193,6 +193,7 @@ label {
     color: aqua
 }
 
+
 @media (max-width: 500px) {
     .cadastroEntrar {
         display: flex;
