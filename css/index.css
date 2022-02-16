@@ -61,15 +61,28 @@ body{
 .containerEspera{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 .containerEspera h2{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 600;
     text-shadow: black 1px 3px 3px;
 
 }
-#button{
+.button {
+    margin-left: 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 80%;
+    height: 60px;
+    background-color: transparent;
+    color: aqua;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button a{
     text-decoration: none;
 }

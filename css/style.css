@@ -20,7 +20,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;  
   background-image: url("https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/09/plexus1.gif?fit=750%2C365&quality=80&strip=all&ssl=1");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   box-sizing: border-box;
   background-attachment: fixed;
   
