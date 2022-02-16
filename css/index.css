@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 96%;
+    height: auto;
+    margin: 2vw;
+    padding-left: 1vw;
+    border-bottom: white  solid 0.5px;
+}
+#container h1{
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+}
+#p{
+    text-align: justify;
+    font-weight: 600;
+    color: white;
+    font-size: 23px;
+}
+.roboImg{
+    max-width:800px;
+    max-height:460px;
+    background-color: transparent;
+}
+#tituloBeneficios{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: black 6px 3px 3px;
+}
+.containerBeneficios{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ .beneficios{
+     width: 33%;
+     display: flex;
+     flex-direction: column;
+ }
+.lista li{
+    text-align: justify;
+    color: white;
+    list-style-type: none;
+    font-size: 20px;
+    text-shadow: black 6px 3px 3px;
+}
+.containerEspera{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.containerEspera h2{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: black 1px 3px 3px;
+
+}
+.button {
+    margin-left: 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 80%;
+    height: 60px;
+    background-color: transparent;
+    color: aqua;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button a{
+    text-decoration: none;
+}

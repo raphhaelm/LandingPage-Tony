@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T.O.N.Y</title>     
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T.O.N.Y</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -26,38 +28,49 @@
         <li>
           <a href="./html/faleconosco.html">Fale Conosco</a>
         </li>
-        
+
         <li>
           <a href="./html/formularios.html">Login/Cadastro</a>
         </li>
       </ul>
     </nav>
   </header>
-<div>
-<H1>HELLO WORLD, I AM TONY</H1>
-<h5>Olá, você que acessa este site tem a oportunidade de utilizar um produto inovador.
-  Bem, voce como Webdev front end, ao inicar um novo projeto, voce abri uma pasta, inicia seu VS code (ou outro programa, da sua preferencia), e começa a codar, uma pagina html, um css e logo seu JS... ate ai tudo bem.
-  Apos algum tempo desenvolvendo seu codigo voce pensa em uma interface ou uma interacao, que voce nao consegue e voce começa a buscar a solução, consulta seus amigos, outros profissionais e a bendita documentação!
-  certo ?
-
-  e se, voce pudesse ter sempre ao seu alcance um amigo que  fosse capaz de codar com voce, que pudesse te trazer de forma rapida e simples, os resultados que voce precisa? Alguem sempre disponivel para voce... 
-  entao ....
-  Apresentamos o Tony.
-
-  Tony é a IA - desenvolvida pela nossa squad de devolvedores da FrontEnders.
-  Ela é carregada e atualizada constantemente, com base na documentação, esta sicronizada com MDN, OverFlow, S3school e demais portais.
-  Tony é capaz de desevolver codigos de acorda com a preferencia do usuario 
-  Tony produz mais em menos tempo 
-  Tony é o Seu assistente, amigo, funcionario e muito mais 
-
-  Se inscreva para ter acesso ao Tony no seu lançamento 
-  click aqui => 
-</h5>
-</div>
-<footer>
-  <div class="rodape">
-    <p class="textofooter">Resilia &copy 2022 Todos os Direitos reservados -T14</p>
+  <main>
+    <div id="container">
+      <div>
+        <img src="./img/robo.png" class="roboImg" alt="...">
+      </div>
+      <div class="texto" >
+        <h1>I AM TONY!</h1>
+        <p id="p">TONY é uma I.A. de suporte na criação de códigos de Html, CSS e JavaScript, uma inteligência artificial que cria em diferentes linguagens, através de uma extensão instalada no seu editor de códigos.  A sua criação foi pensada afim de auxiliar programadores Front End na solução de problemas como  erros de código , falta de raciocínio para criação de um layout e soluções para algoritmos que não estão funcionando.
+          TONY faz uma vistoria em seu código e entende a sua capacidade como programador, a partir dessa análise, ele inicia os códigos junto com o profissional da ajudando e explicando o que está sendo feito.
+         </p>
+      </div>
+      
+    </div>
+    <div class="containerBeneficios">
+    <div id="beneficios" class="itensDaLista">
+        <h1 id="tituloBeneficios">Beneficios</h1>  
+      <ul class="lista">
+        <li class="itensDaLista">● Economia de Tempo.</li>
+        <li class="itensDaLista">● Codigo Clean e Organizado.</li>
+        <li class="itensDaLista">● Mantenha a Qualidade de seus projetos.</li>
+        <li class="itensDaLista">● Do codigo simples ao avançado.</li>
+      </ul>
+    </div>
   </div>
-</footer>
+  <div class="containerBeneficios"> 
+  <div class="containerEspera">
+    <H2> Lista de Espera</H2>
+   <button class="button"><a href="./html/formularios.html">Clique Aqui</a></button>
+  </div>
+</div>
+  </main>
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Resilia - T14 - Grupo</small>
+    </div>
+  </footer>
 </body>
+
 </html>
