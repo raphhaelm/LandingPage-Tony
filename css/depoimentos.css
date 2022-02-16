@@ -4,13 +4,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
-}
+  }
 
 .depoimento1{
     
     height: 16vh;
     width: 122vh;
-    margin-top: 10vh;
     background-color: rgba(255,255,255,0.1);
     border-radius: 4vh 0 0 0 ;
     opacity: 70%;
@@ -22,7 +21,8 @@
     backdrop-filter: blur(8px);
     box-shadow: -10px 15px 50px #000;
     position: relative;
-    margin-top: -18px;
+    
+  
    
    
 }
@@ -54,7 +54,7 @@
     border-radius: 4vh 0 0 0 ;
     opacity: 70%;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2.8vh;
     z-index: 1;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
@@ -66,15 +66,18 @@
  
  p{
      color: #fff;
+     opacity: 100%;
+    
+    
  }
 
 .img1 img {
     clip-path: circle(50% at 50% 50%);
     width: 130px;
     height: 130px;
-    margin-left: 300%;
+    margin-left: 122vh;
     position: relative;
-    margin-bottom: -21vh;
+    margin-bottom: -24vh;
     z-index: 2;
     
     
@@ -83,9 +86,9 @@
     clip-path: circle(50% at 50% 50%);
     width: 130px;
     height: 130px;
-    margin-right: 120vh;
+    margin-right: 127vh;
     position: relative;
-    margin-bottom: -38vh;
+    margin-bottom: -40vh;
     z-index: 2;
     
     
@@ -96,7 +99,7 @@
     height: 130px;
     margin-left: 300%;
     position: relative;
-    margin-bottom: -54vh;
+    margin-bottom: -56vh;
     z-index: 2;
     
     
