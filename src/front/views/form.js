@@ -12,10 +12,10 @@ $('#inputCEP').on('focusout', function () {
                 $("#inputNum").focus();
             }
         });
-    }catch (e) {
+    } catch (e) {
         alert('Opsss... Preencha manualmente as informações')
     }
-    
+
 })
 
 $('#cadastre').on('click', function () {
