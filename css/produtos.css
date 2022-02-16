@@ -18,7 +18,7 @@
     margin: 10px;
     width: 100vw;
 }
-.card{
+.cardPlanos{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -33,7 +33,7 @@
     backdrop-filter: blur(8px);
     box-shadow: -10px 15px 50px #000;
 }
-.card h1{
+.cardPlanos h1{
     color: black;
     text-shadow: 1px 1.5px 2px #fff;
     background-image: url("../img/olhoProdutos.png");
@@ -46,7 +46,7 @@
     text-transform: uppercase;
     font-weight: 800;
 }
-.card p{
+.cardPlanos p{
     color:#ddd;
     padding: 20px;
     padding-top: 20px;

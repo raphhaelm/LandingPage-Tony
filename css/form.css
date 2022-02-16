@@ -53,7 +53,7 @@
     border-radius: 20px;
     box-shadow: -10px 15px 50px #000;
     backdrop-filter: blur(8px);
-
+    margin-bottom: 50px;    
 }
 
 .login {
@@ -117,7 +117,7 @@
     color: #0000ff;
 }
 
-.button {
+.buttonForm {
     border-radius: 25px;
     font-weight: bold;
     font-size: 15px;
@@ -128,10 +128,11 @@
 }
 
 input {
+    font-size: 8px;
     width: 100%;
     border-radius: 5px;
     margin-left: 8px;
-    color: black;
+    color: white;
     font-weight: 200;
     text-align: center;
     background-color: aquamarine;
@@ -162,7 +163,8 @@ select {
     text-align: center;
 }
 
-label {
+.label {
+    font-size: 11px;
     margin-bottom: 00.2em;
     color: white;
     font-weight: bolder;
@@ -192,8 +194,10 @@ label {
     background-color: transparent;
     color: aqua
 }
-
-
+.recuperacaoSenha{
+    color: white;
+    font-weight: bold;
+}
 @media (max-width: 500px) {
     .cadastroEntrar {
         display: flex;

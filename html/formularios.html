@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conheça o TONY</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/form.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">  
+  <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/produtos.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -17,6 +19,8 @@
   <header>
     <nav>
       <ul>
+        <li class="logo">
+        </li>
         <li>
           <a href="../index.html">Home</a>
         </li>
@@ -46,61 +50,61 @@
         <div class="form">
           <form action="">
             <div class="input">
-              <label for="input_name">Nome:</label>
+              <label for="input_name" class="label" >Nome:</label>
               <input type="text" name="input_name" id="inputName">
             </div>
             <div class="input">
-              <label for="input_sobrenome">Sobrenome:</label>
+              <label for="input_sobrenome" class="label">Sobrenome:</label>
               <input type="text" name="input_sobrenome" id="inputSobre">
             </div>
             <div class="input">
-              <label for="input_email">Email:</label>
+              <label for="input_email" class="label">Email:</label>
               <input type="email" name="input_email" id="inputEmail">
             </div>
             <div class="input" id="divSenha">
               <div class="">
-                <label for="input_senha">Senha:</label>
+                <label for="input_senha" class="label">Senha:</label>
                 <input type="password" name="input_senha" id="inputSenha">
               </div>
               <div>
-                <label for="input_confirmaSenha">Confirmação:</label>
+                <label for="input_confirmaSenha" class="label">Confirmação:</label>
 
-                <input type="password" name="input_confirmaSenha" id="inputConfirma">
+                <input type="password" name="input_confirmaSenha" class="label" id="inputConfirma">
               </div>
               <div>
-                <label for="input_RG">RG:</label>
+                <label for="input_RG" class="label">RG:</label>
                 <input type="text" name="input_RH" id="input_RG">
               </div>
             </div>
             <div class="input" id="divCep">
-              <label for="input_cep">CEP:</label>
+              <label for="input_cep" class="label">CEP:</label>
               <input type="text" name="input_cep" id="inputCEP">
             </div>
             <div class="input">
-              <label for="input_endereco">Endereço:</label>
+              <label for="input_endereco" class="label">Endereço:</label>
               <input type="text" name="input_num" id="inputEndereco">
             </div>
             <div class="input" id="divEndereco">
               <div class="inputNum">
-                <label for="input_num">Nº:</label>
+                <label for="input_num" class="label">Nº:</label>
                 <input type="text" name="input_numero" id="inputNum">
               </div>
               <div>
-                <label for="input_comp">Complemento:</label>
+                <label for="input_comp" class="label">Complemento:</label>
                 <input type="text" name="input_comp" id="inputComp">
               </div>
               <div>
-                <label for="input_bairro">Bairro:</label>
+                <label for="input_bairro" class="label">Bairro:</label>
                 <input type="text" name="input_bairro" id="inputBairro">
               </div>
             </div>
             <div class="input" id="divCidadeEstado">
               <div>
-                <label for="input_cidade">Cidade:</label>
+                <label for="input_cidade" class="label">Cidade:</label>
                 <input type="text" name="input_cidade" id="inputCidade">
               </div>
               <div>
-                <label for="text">Uf:</label>
+                <label for="text" class="label">Uf:</label>
                 <select id="inputUf" class="">
                   <option selected>--</option>
                   <option>AM</option>
@@ -129,12 +133,12 @@
                 </select>
               </div>
               <div>
-                <label for="input_pais">País:</label>
+                <label for="input_pais" class="label">País:</label>
                 <input type="text" name="input_pais" id="inputPais">               
               </div>
             </div>
             <div class="btn-form">             
-              <button class="button" id="btn-cadastro">Cadastre-se</button>
+              <button class="buttonForm" id="btn-cadastro">Cadastre-se</button>
             </div>
 
 
@@ -150,7 +154,7 @@
           </div>
         
           <div class="btn-form">
-            <button class="button" id="btn-entrar">Entrar</button>
+            <button class="buttonForm" id="btn-entrar">Entrar</button>
             <p><a href="../html/recuperaSenha.html">Esqueceu a senha ?</a></p>
           </div>
         </div>
@@ -158,18 +162,14 @@
     </div>
   </div>
 
-  <footer>
-    <div class="rodape">
-      <p class="textofooter">Resilia &copy 2022 Todos os Direitos reservados -T14</p>
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Resilia - T14 - Grupo</small>
     </div>
-  </footer> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="../js/form.js"></script>
-  <script src="../js/login.js"></script>
+  <script src="../src/front/views/form.js"></script>
+  <script src="../src/front/views/login.js"></script>
 </body>
 </html>
