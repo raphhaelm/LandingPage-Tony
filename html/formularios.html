@@ -49,6 +49,9 @@
       <div>
         <div class="form">
           <form action="">
+            <div class="divLogin">
+              <input type="text" name="validacaoForm" id='input_validacao_form'class="inputLogin" placeholder="">
+            </div>
             <div class="input">
               <label for="input_name" class="label" >Nome:</label>
               <input type="text" name="input_name" id="inputName">
@@ -73,7 +76,7 @@
               </div>
               <div>
                 <label for="input_RG" class="label">RG:</label>
-                <input type="text" name="input_RH" id="input_RG">
+                <input type="number" name="input_RH" id="input_RG" placeholder="xxxx5678">
               </div>
             </div>
             <div class="input" id="divCep">
@@ -140,9 +143,7 @@
             <div class="btn-form">             
               <button class="buttonForm" id="btn-cadastro">Cadastre-se</button>
             </div>
-
-
-
+            
           </form>
         </div>
         <div class="login">
@@ -150,12 +151,15 @@
             <input type="text" name="login" id='input_login'class="inputLogin" placeholder="Login">
           </div>
           <div class="divLogin">
-            <input type="text" name="senha" class="inputLogin" placeholder="Senha">
+            <input type="password" id="input_senha_login" name="senha" class="inputLogin" placeholder="Senha">
           </div>
         
           <div class="btn-form">
             <button class="buttonForm" id="btn-entrar">Entrar</button>
             <p><a href="../html/recuperaSenha.html">Esqueceu a senha ?</a></p>
+          </div>
+          <div class="divLogin">
+            <input type="text" name="validacao" id='input_validacao'class="inputLogin" placeholder="">
           </div>
         </div>
       </div>
@@ -170,6 +174,5 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../src/front/views/form.js"></script>
-  <script src="../src/front/views/login.js"></script>
 </body>
 </html>
