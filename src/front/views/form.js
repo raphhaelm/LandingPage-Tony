@@ -51,10 +51,10 @@ $('#logar').on('click', function () {
     $('#cadastre').css({ 'border': 'none', 'background': 'rgba(255,255,255,0.1)', 'color': 'aqua' })
 });
 
-// Função que válida enail para recuperação de senha
+// Função que válida email para recuperação de senha
 $('#btn-recuperar').on('click', function (e) {
     e.preventDefault();
-    if (emailRecupera.val().includes("@", ".com") && emailRecupera.val().length > 6) {
+    if (emailRecupera.val().includes("@")&& emailRecupera.val().includes('.com') && emailRecupera.val().length > 6) {
         alert(`Operação realizada com sucesso. Digite o codigo recebido no seu email. `);
         $('#codigoRecupera').css({'display':'block'});
     } else {
@@ -68,24 +68,36 @@ $('#codigoRecupera').on('focusout', function(){
 })
 
 // Função que válida email para login.
-$('#btn-enviar').on('click', function (e) {
+$('#btn-entrar').on('click', function (e) {
     e.preventDefault();
-    if ($('inputLogin').val().includes("@", ".com")) {
-        alert(`Operação realizada com sucesso.  `);
+    const email = $('#input_login').val();
+    const senha = $('#input_senha_login').val();
+    if($('#input_login').val().includes("@") && $('#input_login').val().includes(".com") && email.length > 6){
+        if(senha.length > 7){
+            $('#input_validacao').css({'display': 'block'});
+            $('#input_validacao').val(`Login Sucess`);
+        } else {
+            $('#input_validacao').css({'display': 'block'});            
+            $('#input_validacao').css({'border':'red solid 3px'});
+            $('#input_validacao').val(`Senha inválida`);
+        }
     } else {
-        alert('Preencha o campo email, com uma conta válida!');
-    }
+        $('#input_validacao').css({'display': 'block'});            
+        $('#input_validacao').css({'border':'red solid 3px'});
+        $('#input_validacao').val(`Cadastro inválido`);}
 });
 
 // Função que válida email de cadastro.
 $("#inputEmail").on('focusout', function (e) {
     e.preventDefault();
-    if ($("#inputEmail").val().includes('@', '.com')) {
-        email = 'emailValido';
-        $("#inputEmail").css({ 'background-color': "rgb(156, 230, 95, 0.9)" })
+    const login = $("#inputEmail").val();
+    if(login.includes('@') && login.length >= 7 && login.includes('.com')){
+        email = 'emailValido'
+        $("#inputEmail").css({ 'background-color': "rgb(156, 230, 95, 0.9)" });
     } else {
         $("#inputEmail").css({ 'background-color': "#ff00005d" })
     }
+    
 });
 
 //Função que confere se senha e confirmação são iguais;
@@ -93,15 +105,26 @@ $("#inputConfirma").on('focusout', function (e) {
     e.preventDefault();
     let senha = $('#inputSenha').val();
     let confirmacao = $("#inputConfirma").val();
-    if (senha == confirmacao) {
+    if(senha.length < 7 || senha != confirmacao){
+        $("#inputSenha").css({ 'background-color': "#ff00005d" });
+        $("#inputSenha").focus();
+        $("#inputConfirma").val("");
+    } else if (confirmacao < 7 || confirmacao != senha){
+        $("#inputConfirmacao").css({ 'background-color': "#ff00005d" });
+        $("#inputConfirmacao").focus()
+    } else {
         $("#inputSenha").css({ 'background-color': "rgb(156, 230, 95, 0.9)" });
         $("#inputConfirma").css({ 'background-color': "rgb(156, 230, 95, 0.9)" });
-        passaword = 'senhaValida';
-    } else {
-        $("#inputSenha").css({ 'background-color': "#ff00005d" });
-        $("#inputConfirma").css({ 'background-color': "#ff00005d" });
-
     }
+    // if (senha == confirmacao) {
+    //     $("#inputSenha").css({ 'background-color': "rgb(156, 230, 95, 0.9)" });
+    //     $("#inputConfirma").css({ 'background-color': "rgb(156, 230, 95, 0.9)" });
+    //     passaword = 'senhaValida';
+    // } else {
+    //     $("#inputSenha").css({ 'background-color': "#ff00005d" });
+    //     $("#inputConfirma").css({ 'background-color': "#ff00005d" });
+
+    // }
 });
 
 //Função que válida o cadastro.
@@ -120,12 +143,18 @@ $('#btn-cadastro').on('click', function (e) {
     } else {
         alert('Dados incompletos! Preencha todos os campos para cadastro!');
         $("#inputName").css({'border': 'red solid 2px'});
+        $("#inputName").val("");
         $("#inputSobre").css({'border': 'red solid 2px'});
+        $("#inputSobre").val("")
         $("#inputEmail").css({'border': 'red solid 2px'});
+        $("#inputEmail").val("");
         $("#inputSenha").css({'border': 'red solid 2px'});
+        $("#inputSenha").val("");
         $("#inputConfirma").css({'border': 'red solid 2px'});
-        $("#input_RG").css({'border': 'red solid 2px'}); 
+        $("#inputConfirma").val("");
         $("#inputCEP").css({'border': 'red solid 2px'});
+        $("#inputCEP").val("");
         $("#inputNum").css({'border': 'red solid 2px'});
+        $("#inputNum").val("");
     }
 })
