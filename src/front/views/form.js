@@ -107,11 +107,11 @@ $("#inputConfirma").on('focusout', function (e) {
 //Função que válida o cadastro.
 $('#btn-cadastro').on('click', function (e) {
     e.preventDefault();
-    if (email == 'emailValido' && passaword == 'senhaValida' && $("#inputName").val() != "" && $("#inputSobre").val() != "") {
+    if (email == 'emailValido' && passaword == 'senhaValida' && $("#inputName").val() != "" && $("#inputSobre").val() != "" && $('#inputNum').val() != "") {
         $("#input_validacao_form").css({ 'display': 'block' });
         $("#input_validacao_form").val(`Cadastro efetuado com sucesso.`);
-        alert(` Cadastro efetuado com sucesso.
-        Efetuei login para acompanhar o desenvolvimento de TONY`);
+        alert(` Cadastro efetuado com sucesso!
+        Efetue login para acompanhar o desenvolvimento de TONY`);
         $('.login').css({ 'display': 'flex' })
         $('.form').css({ 'display': 'none' })
         $('#logar').css({ 'border': '#5819ac 2px solid', 'background': 'rgba(255,255,255,0.8)', 'color': 'aqua' })
