@@ -76,6 +76,7 @@ $('#btn-entrar').on('click', function (e) {
         if(senha.length > 7){
             $('#input_validacao').css({'display': 'block'});
             $('#input_validacao').val(`Login Sucess`);
+            
         } else {
             $('#input_validacao').css({'display': 'block'});            
             $('#input_validacao').css({'border':'red solid 3px'});
@@ -113,6 +114,7 @@ $("#inputConfirma").on('focusout', function (e) {
         $("#inputConfirmacao").css({ 'background-color': "#ff00005d" });
         $("#inputConfirmacao").focus()
     } else {
+        passaword = 'senhaValida';
         $("#inputSenha").css({ 'background-color': "rgb(156, 230, 95, 0.9)" });
         $("#inputConfirma").css({ 'background-color': "rgb(156, 230, 95, 0.9)" });
     }
@@ -130,7 +132,7 @@ $("#inputConfirma").on('focusout', function (e) {
 //Função que válida o cadastro.
 $('#btn-cadastro').on('click', function (e) {
     e.preventDefault();
-    if (email == 'emailValido' && passaword == 'senhaValida' && $("#inputName").val() != "" && $("#inputSobre").val() != "" && $('#inputNum').val() != "") {
+    if (email == 'emailValido' && passaword == 'senhaValida' && $("#inputName").val() != "" && $("#inputSobre").val() != "" && $('#inputNum').val() != ""  ) {
         $("#input_validacao_form").css({ 'display': 'block' });
         $("#input_validacao_form").val(`Cadastro efetuado com sucesso.`);
         alert(` Cadastro efetuado com sucesso!
