@@ -75,6 +75,7 @@ $('#btn-entrar').on('click', function (e) {
     if($('#input_login').val().includes("@") && $('#input_login').val().includes(".com") && email.length > 6){
         if(senha.length > 7){
             $('#input_validacao').css({'display': 'block'});
+            $('#input_validacao').css({'border':'green solid 3px'});
             $('#input_validacao').val(`Login Sucess`);
             
         } else {
